@@ -1,59 +1,134 @@
-HCI Simulation: Syringe Pump Control System
-A Practical Study of Norman’s 7 Stages of Action
-📌 Project Overview
-This project is an interactive web-based simulation of a Medical Syringe Pump, designed to demonstrate the Human-Computer Interaction (HCI) principles defined by Don Norman. The simulation guides the user through the 7 Stages of Action, highlighting how interface design can either bridge or widen the Gulf of Execution and the Gulf of Evaluation.
+# HCI Simulation: Syringe Pump Control System
 
-🛠 Tech Stack
-HTML5: Semantic structure for the medical dashboard.
+### *A Practical Study of Norman’s 7 Stages of Action*
 
-CSS3: Modern UI with a Slate & Indigo professional theme.
+---
 
-JavaScript (ES6+): Dynamic logic for stage progression and keypad generation.
+## Project Overview
 
-🚀 The 7 Stages Flow
-The application follows a linear progression through the action cycle:
+This project is an interactive **web-based simulation of a Medical Syringe Pump**, designed to demonstrate key **Human-Computer Interaction (HCI)** principles defined by Don Norman.
 
-Form Goal: The user is assigned a specific clinical objective (e.g., Deliver 50.5 ml/hr).
+The simulation guides the user step-by-step through the **7 Stages of Action**, highlighting how interface design can either reduce or increase:
 
-Form Intention: The user confirms the specific dosage required from a list of options.
+* The **Gulf of Execution**
+* The **Gulf of Evaluation**
 
-Specify Action: The user chooses between a Good Design or a Bad Design interface.
+---
 
-Execute Action: * Good Design: Provides a minimal keypad containing only the digits needed for the dose.
+## Tech Stack
 
-Bad Design: Presents a complex, industrial-style 20-key grid with confusing labels (ENT, DEL, F1, SHIFT).
+* **HTML5** – Semantic structure for the medical dashboard
+* **CSS3** – Modern UI with a Slate & Indigo professional theme
+* **JavaScript (ES6+)** – Dynamic logic for stage progression and keypad generation
 
-Perceive State: The user observes the value typed on the LCD screen.
+---
 
-Interpret State: * Good Design: Provides immediate visual feedback (✅ or ❌).
+## The 7 Stages Flow
 
-Bad Design: Provides no feedback, forcing the user to verify the numbers manually.
+The application follows a structured progression through Norman’s Action Cycle:
 
-Evaluate Outcome: The system determines if the original goal was met (Success/Failure).
+### 1️⃣ Form Goal
 
-💡 Key HCI Concepts Demonstrated
-1. The Gulf of Execution
-The "Bad Design" illustrates a wide Gulf of Execution. By using non-standard labels and an overwhelming number of unnecessary buttons, the system makes it difficult for the user to figure out how to input the dose. The "Good Design" minimizes this by providing only the necessary affordances.
+The user is assigned a clinical objective
+*(e.g., Deliver 50.5 ml/hr)*
 
-2. The Gulf of Evaluation
-In the "Bad Design," the user is left wondering if they performed the task correctly because the system gives no feedback. In the "Good Design," the use of clear icons (✅/❌) helps the user immediately perceive and interpret the system state.
+### 2️⃣ Form Intention
 
-3. Slips vs. Mistakes
-The simulation allows users to experience:
+The user selects the correct dosage from given options
 
-Slips: Mistyping a number due to a cluttered keypad (Execution level).
+### 3️⃣ Specify Action
 
-Mistakes: Choosing the wrong dosage in Stage 2 (Planning level).
+The system highlights required inputs based on design:
 
-🖥 How to Run
-Clone or download the project files (index.html, style.css, and script.js).
+* **Good Design:** Only necessary digits
+* **Bad Design:** All digits (0–9) and extra inputs
 
-Ensure all three files are in the same folder.
+### 4️⃣ Execute Action
 
-Open index.html in any modern web browser (Chrome, Firefox, Edge).
+* **Good Design:** Minimal keypad (0–9, ".", Enter)
+* **Bad Design:** Complex keypad with unnecessary keys
+  *(ENT, DEL, F1, SHIFT, etc.)*
 
-Developed by: Abdur Rafay Ali Khan
+### 5️⃣ Perceive State
 
-Course: CS-XII (Computer Science)
+The user observes the entered value on the LCD display
 
-Topic: Human-Computer Interaction (HCI)
+### 6️⃣ Interpret State
+
+* **Good Design:** Immediate feedback (✅ / ❌)
+* **Bad Design:** No feedback provided
+
+### 7️⃣ Evaluate Outcome
+
+Final result is displayed:
+
+* ✅ **Success:** Goal achieved
+* ❌ **Failure:** Goal not achieved
+
+---
+
+## 💡 Key HCI Concepts Demonstrated
+
+### 🔴 1. Gulf of Execution
+
+The **Bad Design** creates difficulty in performing actions due to:
+
+* Confusing buttons
+* Unnecessary complexity
+
+The **Good Design** reduces this gap by:
+
+* Providing clear and minimal controls
+
+---
+
+### 🔵 2. Gulf of Evaluation
+
+The **Bad Design** provides no feedback, leaving users uncertain.
+
+The **Good Design** improves usability by:
+
+* Showing clear visual feedback (✅ / ❌)
+* Helping users understand system state instantly
+
+---
+
+### ⚠️ 3. Slips vs. Mistakes
+
+This simulation demonstrates:
+
+* **Slips:**
+  Incorrect input due to confusing interface *(execution error)*
+
+* **Mistakes:**
+  Wrong decision during planning *(e.g., selecting wrong dosage)*
+
+---
+
+## 🖥 How to Run
+
+1. Download or clone the repository
+2. Ensure all files are in the same folder:
+
+   * `index.html`
+   * `style.css`
+   * `script.js`
+3. Open **index.html** in any modern browser:
+
+   * Chrome
+   * Firefox
+   * Edge
+
+---
+
+## 👨‍💻 Developed By
+
+**Abdur Rafay Ali Khan**
+
+---
+
+## 📚 Subject
+
+**Human-Computer Interaction (HCI)**
+
+---
