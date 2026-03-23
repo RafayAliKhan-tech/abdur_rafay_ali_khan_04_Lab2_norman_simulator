@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCI Simulation | Norman's 7 Stages</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="app-shell">
+        <header class="main-header">
+            <div class="brand">
+                <h1>Syringe Pump Control System</h1>
+            </div>
+            <div id="system-mode-tag" class="mode-indicator">Awaiting Configuration</div>
+        </header>
+
+        <div class="app-body">
+            <nav class="stages-nav">
+                <div class="gulf-badge">Gulf of Execution</div>
+                <div class="stage-link" id="s1"><span>01</span> Form Goal</div>
+                <div class="stage-link" id="s2"><span>02</span> Form Intention</div>
+                <div class="stage-link" id="s3"><span>03</span> Specify Action</div>
+                <div class="stage-link" id="s4"><span>04</span> Execute Action</div>
+                <div class="gulf-badge">Gulf of Evaluation</div>
+                <div class="stage-link" id="s5"><span>05</span> Perceive State</div>
+                <div class="stage-link" id="s6"><span>06</span> Interpret State</div>
+                <div class="stage-link" id="s7"><span>07</span> Evaluate Outcome</div>
+            </nav>
+
+            <main class="viewport">
+                <div class="instruction-module">
+                    <h2 id="step-title">System Ready</h2>
+                    <p id="step-desc">Initialize the simulation to begin the 7 stages of action.</p>
+                    <div id="interaction-ctrls" class="btn-group"></div>
+                </div>
+
+                <div class="hardware-view">
+                    <div id="target-note" class="rx-note" style="display:none;">
+                        <span class="rx-label">PRESCRIPTION</span>
+                        <div class="rx-value"><span id="target-value">0.0</span> <small>ml/hr</small></div>
+                    </div>
+
+                    <div class="medical-pump">
+                        <div class="device-inner">
+                            <div class="lcd-screen">
+                                <div class="lcd-header">
+                                    <span id="pump-status">IDLE</span>
+                                    <span class="battery">88% 🔋</span>
+                                </div>
+                                <div id="lcd-value">00.0</div>
+                                <div id="feedback-icon"></div>
+                                <div class="lcd-footer">INFUSION RATE ML/H</div>
+                            </div>
+                            
+                            <div id="keypad-container" class="keypad-wrapper">
+                                <div id="keypad-grid" class="keypad-grid"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
